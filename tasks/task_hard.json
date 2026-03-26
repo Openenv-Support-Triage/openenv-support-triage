@@ -1,0 +1,467 @@
+[
+  {
+    "observation": {
+      "ticket_id": "HARD-3000",
+      "ticket_text": "Wow, ticket #882 is now 12 days old. TWELVE. I have explained data loss 4 times. Documenting for my lawyer. But sure, take your time :)",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 0",
+      "customer_email": "angry0@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-19T11:46:02.455508",
+      "conversation_history": [
+        "We are looking into it.",
+        "Still looking into it."
+      ],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P0",
+      "department": "engineering",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3001",
+      "ticket_text": "re: re: re: re: previous issue. You said you'd refund me last week. The CEO promised on twitter that refunds are processed in 2 days. What gives? I will report to BBB.",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 1",
+      "customer_email": "angry1@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-24T11:46:02.455525",
+      "conversation_history": [
+        "Refund processed",
+        "Where is it?"
+      ],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "billing",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3002",
+      "ticket_text": "re: re: re: re: previous issue. You said you'd refund me last week. The CEO promised on twitter that refunds are processed in 2 days. What gives? I will report to BBB.",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 2",
+      "customer_email": "angry2@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-22T11:46:02.455531",
+      "conversation_history": [
+        "Refund processed",
+        "Where is it?"
+      ],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "billing",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3003",
+      "ticket_text": "Great job on the new release! It only deleted 3 of my user accounts. Fantastic feature. Please restore them immediately.",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 3",
+      "customer_email": "angry3@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-18T11:46:02.455534",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "engineering",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": null
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3004",
+      "ticket_text": "Wow, ticket #882 is now 12 days old. TWELVE. I have explained data loss 4 times. Documenting for my lawyer. But sure, take your time :)",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 4",
+      "customer_email": "angry4@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-21T11:46:02.455537",
+      "conversation_history": [
+        "We are looking into it.",
+        "Still looking into it."
+      ],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P0",
+      "department": "engineering",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3005",
+      "ticket_text": "re: re: re: re: previous issue. You said you'd refund me last week. The CEO promised on twitter that refunds are processed in 2 days. What gives? I will report to BBB.",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 5",
+      "customer_email": "angry5@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-23T11:46:02.455540",
+      "conversation_history": [
+        "Refund processed",
+        "Where is it?"
+      ],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "billing",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3006",
+      "ticket_text": "Great job on the new release! It only deleted 3 of my user accounts. Fantastic feature. Please restore them immediately.",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 6",
+      "customer_email": "angry6@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-25T11:46:02.455542",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "engineering",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": null
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3007",
+      "ticket_text": "re: re: re: re: previous issue. You said you'd refund me last week. The CEO promised on twitter that refunds are processed in 2 days. What gives? I will report to BBB.",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 7",
+      "customer_email": "angry7@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-24T11:46:02.455545",
+      "conversation_history": [
+        "Refund processed",
+        "Where is it?"
+      ],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "billing",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3008",
+      "ticket_text": "Wow, ticket #882 is now 12 days old. TWELVE. I have explained data loss 4 times. Documenting for my lawyer. But sure, take your time :)",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 8",
+      "customer_email": "angry8@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-20T11:46:02.455547",
+      "conversation_history": [
+        "We are looking into it.",
+        "Still looking into it."
+      ],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P0",
+      "department": "engineering",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3009",
+      "ticket_text": "Great job on the new release! It only deleted 3 of my user accounts. Fantastic feature. Please restore them immediately.",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 9",
+      "customer_email": "angry9@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-20T11:46:02.455550",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "engineering",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": null
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3010",
+      "ticket_text": "re: re: re: re: previous issue. You said you'd refund me last week. The CEO promised on twitter that refunds are processed in 2 days. What gives? I will report to BBB.",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 10",
+      "customer_email": "angry10@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-17T11:46:02.455553",
+      "conversation_history": [
+        "Refund processed",
+        "Where is it?"
+      ],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "billing",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3011",
+      "ticket_text": "re: re: re: re: previous issue. You said you'd refund me last week. The CEO promised on twitter that refunds are processed in 2 days. What gives? I will report to BBB.",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 11",
+      "customer_email": "angry11@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-21T11:46:02.455555",
+      "conversation_history": [
+        "Refund processed",
+        "Where is it?"
+      ],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "billing",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3012",
+      "ticket_text": "Wow, ticket #882 is now 12 days old. TWELVE. I have explained data loss 4 times. Documenting for my lawyer. But sure, take your time :)",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 12",
+      "customer_email": "angry12@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-24T11:46:02.455558",
+      "conversation_history": [
+        "We are looking into it.",
+        "Still looking into it."
+      ],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P0",
+      "department": "engineering",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3013",
+      "ticket_text": "re: re: re: re: previous issue. You said you'd refund me last week. The CEO promised on twitter that refunds are processed in 2 days. What gives? I will report to BBB.",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 13",
+      "customer_email": "angry13@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-21T11:46:02.455560",
+      "conversation_history": [
+        "Refund processed",
+        "Where is it?"
+      ],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "billing",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3014",
+      "ticket_text": "re: re: re: re: previous issue. You said you'd refund me last week. The CEO promised on twitter that refunds are processed in 2 days. What gives? I will report to BBB.",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 14",
+      "customer_email": "angry14@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-22T11:46:02.455563",
+      "conversation_history": [
+        "Refund processed",
+        "Where is it?"
+      ],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "billing",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3015",
+      "ticket_text": "Great job on the new release! It only deleted 3 of my user accounts. Fantastic feature. Please restore them immediately.",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 15",
+      "customer_email": "angry15@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-21T11:46:02.455565",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "engineering",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": null
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3016",
+      "ticket_text": "Wow, ticket #882 is now 12 days old. TWELVE. I have explained data loss 4 times. Documenting for my lawyer. But sure, take your time :)",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 16",
+      "customer_email": "angry16@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-21T11:46:02.455568",
+      "conversation_history": [
+        "We are looking into it.",
+        "Still looking into it."
+      ],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P0",
+      "department": "engineering",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3017",
+      "ticket_text": "re: re: re: re: previous issue. You said you'd refund me last week. The CEO promised on twitter that refunds are processed in 2 days. What gives? I will report to BBB.",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 17",
+      "customer_email": "angry17@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-17T11:46:02.455571",
+      "conversation_history": [
+        "Refund processed",
+        "Where is it?"
+      ],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "billing",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3018",
+      "ticket_text": "Great job on the new release! It only deleted 3 of my user accounts. Fantastic feature. Please restore them immediately.",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 18",
+      "customer_email": "angry18@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-24T11:46:02.455573",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "engineering",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": null
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "HARD-3019",
+      "ticket_text": "re: re: re: re: previous issue. You said you'd refund me last week. The CEO promised on twitter that refunds are processed in 2 days. What gives? I will report to BBB.",
+      "subject": "Re: Re: Re: Still waiting...",
+      "customer_name": "Angry User 19",
+      "customer_email": "angry19@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-23T11:46:02.455576",
+      "conversation_history": [
+        "Refund processed",
+        "Where is it?"
+      ],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "billing",
+      "response": "We apologize for the severe delay and the issues you've faced. This has been escalated immediately.",
+      "escalate": true,
+      "secondary_department": "legal"
+    }
+  }
+]

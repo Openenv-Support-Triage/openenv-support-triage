@@ -1,0 +1,14 @@
+name: "SupportTriageEnv"
+description: "OpenEnv environment for Customer Support Ticket Triage"
+version: "0.1.0"
+entrypoint: "src.environment:SupportTriageEnv"
+tasks:
+  easy:
+    description: "Clear single-intent tickets, obvious keywords"
+    expected_score: 0.85
+  medium:
+    description: "Multi-intent, VIP overrides, ambiguous priority"
+    expected_score: 0.55
+  hard:
+    description: "Sarcasm, legal threats, multi-turn, broken English"
+    expected_score: 0.35

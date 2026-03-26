@@ -1,0 +1,212 @@
+[
+  {
+    "observation": {
+      "ticket_id": "EASY-1000",
+      "ticket_text": "I placed an order but my bank shows two charges.",
+      "subject": "Duplicate charge",
+      "customer_name": "User 0",
+      "customer_email": "user0@example.com",
+      "customer_tier": "standard",
+      "channel": "email",
+      "timestamp": "2026-03-24T11:46:02.453578",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "billing",
+      "response": "Thank you for reaching out. We are processing your request regarding duplicate charge.",
+      "escalate": false,
+      "secondary_department": null
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "EASY-1001",
+      "ticket_text": "I cannot log in, password reset link not working.",
+      "subject": "Password reset",
+      "customer_name": "User 1",
+      "customer_email": "user1@example.com",
+      "customer_tier": "standard",
+      "channel": "email",
+      "timestamp": "2026-03-24T11:46:02.453612",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "product_support",
+      "response": "Thank you for reaching out. We are processing your request regarding password reset.",
+      "escalate": false,
+      "secondary_department": null
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "EASY-1002",
+      "ticket_text": "Where is my order #1234?",
+      "subject": "Order tracking",
+      "customer_name": "User 2",
+      "customer_email": "user2@example.com",
+      "customer_tier": "standard",
+      "channel": "email",
+      "timestamp": "2026-03-24T11:46:02.453618",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P3",
+      "department": "customer_success",
+      "response": "Thank you for reaching out. We are processing your request regarding order tracking.",
+      "escalate": false,
+      "secondary_department": null
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "EASY-1003",
+      "ticket_text": "Please cancel my subscription before the next cycle.",
+      "subject": "Cancellation request",
+      "customer_name": "User 3",
+      "customer_email": "user3@example.com",
+      "customer_tier": "standard",
+      "channel": "email",
+      "timestamp": "2026-03-22T11:46:02.453622",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "billing",
+      "response": "Thank you for reaching out. We are processing your request regarding cancellation request.",
+      "escalate": false,
+      "secondary_department": null
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "EASY-1004",
+      "ticket_text": "My item arrived damaged.",
+      "subject": "Delivery complaint",
+      "customer_name": "User 4",
+      "customer_email": "user4@example.com",
+      "customer_tier": "standard",
+      "channel": "email",
+      "timestamp": "2026-03-23T11:46:02.453626",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "customer_success",
+      "response": "Thank you for reaching out. We are processing your request regarding delivery complaint.",
+      "escalate": false,
+      "secondary_department": null
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "EASY-1005",
+      "ticket_text": "The app crashes every time I open the reports tab.",
+      "subject": "Product defect",
+      "customer_name": "User 5",
+      "customer_email": "user5@example.com",
+      "customer_tier": "standard",
+      "channel": "email",
+      "timestamp": "2026-03-23T11:46:02.453630",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "engineering",
+      "response": "Thank you for reaching out. We are processing your request regarding product defect.",
+      "escalate": false,
+      "secondary_department": null
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "EASY-1006",
+      "ticket_text": "I want to upgrade to premium.",
+      "subject": "Account upgrade",
+      "customer_name": "User 6",
+      "customer_email": "user6@example.com",
+      "customer_tier": "standard",
+      "channel": "email",
+      "timestamp": "2026-03-21T11:46:02.453633",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P3",
+      "department": "billing",
+      "response": "Thank you for reaching out. We are processing your request regarding account upgrade.",
+      "escalate": false,
+      "secondary_department": null
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "EASY-1007",
+      "ticket_text": "When will I get my refund?",
+      "subject": "Refund status",
+      "customer_name": "User 7",
+      "customer_email": "user7@example.com",
+      "customer_tier": "standard",
+      "channel": "email",
+      "timestamp": "2026-03-24T11:46:02.453636",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "billing",
+      "response": "Thank you for reaching out. We are processing your request regarding refund status.",
+      "escalate": false,
+      "secondary_department": null
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "EASY-1008",
+      "ticket_text": "I love the new UI, but the fonts are too small.",
+      "subject": "General feedback",
+      "customer_name": "User 8",
+      "customer_email": "user8@example.com",
+      "customer_tier": "standard",
+      "channel": "email",
+      "timestamp": "2026-03-21T11:46:02.453641",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P3",
+      "department": "product_support",
+      "response": "Thank you for reaching out. We are processing your request regarding general feedback.",
+      "escalate": false,
+      "secondary_department": null
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "EASY-1009",
+      "ticket_text": "How do I export data to CSV?",
+      "subject": "How to use",
+      "customer_name": "User 9",
+      "customer_email": "user9@example.com",
+      "customer_tier": "standard",
+      "channel": "email",
+      "timestamp": "2026-03-22T11:46:02.453645",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P3",
+      "department": "product_support",
+      "response": "Thank you for reaching out. We are processing your request regarding how to use.",
+      "escalate": false,
+      "secondary_department": null
+    }
+  }
+]

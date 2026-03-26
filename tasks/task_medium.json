@@ -1,0 +1,317 @@
+[
+  {
+    "observation": {
+      "ticket_id": "MED-2000",
+      "ticket_text": "Your last update broke our bulk import feature. We use this daily. Plus, our dedicated AM is missing. We are evaluating alternatives.",
+      "subject": "Multiple queries",
+      "customer_name": "Corporate User 0",
+      "customer_email": "corp0@enterprise.co",
+      "customer_tier": "enterprise",
+      "channel": "chat",
+      "timestamp": "2026-03-24T11:46:02.454467",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P0",
+      "department": "engineering",
+      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "escalate": true,
+      "secondary_department": "customer_success"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2001",
+      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation.",
+      "subject": "Important request",
+      "customer_name": "Corporate User 1",
+      "customer_email": "corp1@enterprise.co",
+      "customer_tier": "premium",
+      "channel": "chat",
+      "timestamp": "2026-03-24T11:46:02.454480",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "security",
+      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "escalate": false,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2002",
+      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits. Who do I speak to?",
+      "subject": "Multiple queries",
+      "customer_name": "Corporate User 2",
+      "customer_email": "corp2@enterprise.co",
+      "customer_tier": "premium",
+      "channel": "chat",
+      "timestamp": "2026-03-26T11:46:02.454484",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "engineering",
+      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "escalate": false,
+      "secondary_department": "billing"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2003",
+      "ticket_text": "Your last update broke our bulk import feature. We use this daily. Plus, our dedicated AM is missing. We are evaluating alternatives.",
+      "subject": "Important request",
+      "customer_name": "Corporate User 3",
+      "customer_email": "corp3@enterprise.co",
+      "customer_tier": "enterprise",
+      "channel": "chat",
+      "timestamp": "2026-03-24T11:46:02.454488",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P0",
+      "department": "engineering",
+      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "escalate": true,
+      "secondary_department": "customer_success"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2004",
+      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits. Who do I speak to?",
+      "subject": "Multiple queries",
+      "customer_name": "Corporate User 4",
+      "customer_email": "corp4@enterprise.co",
+      "customer_tier": "premium",
+      "channel": "chat",
+      "timestamp": "2026-03-25T11:46:02.454491",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "engineering",
+      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "escalate": false,
+      "secondary_department": "billing"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2005",
+      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation.",
+      "subject": "Important request",
+      "customer_name": "Corporate User 5",
+      "customer_email": "corp5@enterprise.co",
+      "customer_tier": "premium",
+      "channel": "chat",
+      "timestamp": "2026-03-24T11:46:02.454493",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "security",
+      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "escalate": false,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2006",
+      "ticket_text": "Your last update broke our bulk import feature. We use this daily. Plus, our dedicated AM is missing. We are evaluating alternatives.",
+      "subject": "Multiple queries",
+      "customer_name": "Corporate User 6",
+      "customer_email": "corp6@enterprise.co",
+      "customer_tier": "enterprise",
+      "channel": "chat",
+      "timestamp": "2026-03-24T11:46:02.454496",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P0",
+      "department": "engineering",
+      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "escalate": true,
+      "secondary_department": "customer_success"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2007",
+      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation.",
+      "subject": "Important request",
+      "customer_name": "Corporate User 7",
+      "customer_email": "corp7@enterprise.co",
+      "customer_tier": "premium",
+      "channel": "chat",
+      "timestamp": "2026-03-26T11:46:02.454499",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "security",
+      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "escalate": false,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2008",
+      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits. Who do I speak to?",
+      "subject": "Multiple queries",
+      "customer_name": "Corporate User 8",
+      "customer_email": "corp8@enterprise.co",
+      "customer_tier": "premium",
+      "channel": "chat",
+      "timestamp": "2026-03-26T11:46:02.454501",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "engineering",
+      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "escalate": false,
+      "secondary_department": "billing"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2009",
+      "ticket_text": "Your last update broke our bulk import feature. We use this daily. Plus, our dedicated AM is missing. We are evaluating alternatives.",
+      "subject": "Important request",
+      "customer_name": "Corporate User 9",
+      "customer_email": "corp9@enterprise.co",
+      "customer_tier": "enterprise",
+      "channel": "chat",
+      "timestamp": "2026-03-24T11:46:02.454504",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P0",
+      "department": "engineering",
+      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "escalate": true,
+      "secondary_department": "customer_success"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2010",
+      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits. Who do I speak to?",
+      "subject": "Multiple queries",
+      "customer_name": "Corporate User 10",
+      "customer_email": "corp10@enterprise.co",
+      "customer_tier": "premium",
+      "channel": "chat",
+      "timestamp": "2026-03-25T11:46:02.454507",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "engineering",
+      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "escalate": false,
+      "secondary_department": "billing"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2011",
+      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation.",
+      "subject": "Important request",
+      "customer_name": "Corporate User 11",
+      "customer_email": "corp11@enterprise.co",
+      "customer_tier": "premium",
+      "channel": "chat",
+      "timestamp": "2026-03-26T11:46:02.454510",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "security",
+      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "escalate": false,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2012",
+      "ticket_text": "Your last update broke our bulk import feature. We use this daily. Plus, our dedicated AM is missing. We are evaluating alternatives.",
+      "subject": "Multiple queries",
+      "customer_name": "Corporate User 12",
+      "customer_email": "corp12@enterprise.co",
+      "customer_tier": "enterprise",
+      "channel": "chat",
+      "timestamp": "2026-03-24T11:46:02.454512",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P0",
+      "department": "engineering",
+      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "escalate": true,
+      "secondary_department": "customer_success"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2013",
+      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation.",
+      "subject": "Important request",
+      "customer_name": "Corporate User 13",
+      "customer_email": "corp13@enterprise.co",
+      "customer_tier": "premium",
+      "channel": "chat",
+      "timestamp": "2026-03-26T11:46:02.454517",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "security",
+      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "escalate": false,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2014",
+      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits. Who do I speak to?",
+      "subject": "Multiple queries",
+      "customer_name": "Corporate User 14",
+      "customer_email": "corp14@enterprise.co",
+      "customer_tier": "premium",
+      "channel": "chat",
+      "timestamp": "2026-03-25T11:46:02.454522",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "engineering",
+      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "escalate": false,
+      "secondary_department": "billing"
+    }
+  }
+]
