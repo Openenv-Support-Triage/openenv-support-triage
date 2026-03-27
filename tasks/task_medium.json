@@ -2,62 +2,62 @@
   {
     "observation": {
       "ticket_id": "MED-2000",
-      "ticket_text": "Your last update broke our bulk import feature. We use this daily. Plus, our dedicated AM is missing. We are evaluating alternatives.",
-      "subject": "Multiple queries",
-      "customer_name": "Corporate User 0",
-      "customer_email": "corp0@enterprise.co",
+      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation before renewal.",
+      "subject": "SOC2 compliance check",
+      "customer_name": "Procurement 0",
+      "customer_email": "proc_0@corp.com",
       "customer_tier": "enterprise",
-      "channel": "chat",
-      "timestamp": "2026-03-24T11:46:02.454467",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P0",
-      "department": "engineering",
-      "response": "We have received your request. We will escalate this to the appropriate team.",
-      "escalate": true,
-      "secondary_department": "customer_success"
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "MED-2001",
-      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation.",
-      "subject": "Important request",
-      "customer_name": "Corporate User 1",
-      "customer_email": "corp1@enterprise.co",
-      "customer_tier": "premium",
-      "channel": "chat",
-      "timestamp": "2026-03-24T11:46:02.454480",
+      "channel": "email",
+      "timestamp": "2026-03-23T11:07:45.992872",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P2",
       "department": "security",
-      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "response": "We can provide SOC2 documentation. Routing to security and legal.",
       "escalate": false,
       "secondary_department": "legal"
     }
   },
   {
     "observation": {
+      "ticket_id": "MED-2001",
+      "ticket_text": "Enterprise integration is down again. We have a strict SLA.",
+      "subject": "Important outage request",
+      "customer_name": "Corporate VIP 1",
+      "customer_email": "vip_1@enterprise.co",
+      "customer_tier": "enterprise",
+      "channel": "phone",
+      "timestamp": "2026-03-26T12:07:45.992887",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P0",
+      "department": "engineering",
+      "response": "We have escalated this outage to our highest priority engineering queue.",
+      "escalate": true,
+      "secondary_department": "customer_success"
+    }
+  },
+  {
+    "observation": {
       "ticket_id": "MED-2002",
-      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits. Who do I speak to?",
-      "subject": "Multiple queries",
-      "customer_name": "Corporate User 2",
-      "customer_email": "corp2@enterprise.co",
+      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits.",
+      "subject": "Upgrade and API question",
+      "customer_name": "Dev User 2",
+      "customer_email": "dev_2@startup.io",
       "customer_tier": "premium",
-      "channel": "chat",
-      "timestamp": "2026-03-26T11:46:02.454484",
+      "channel": "email",
+      "timestamp": "2026-03-25T18:07:45.992894",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P2",
       "department": "engineering",
-      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "response": "We will have our engineers address your API query, and loop in billing for the upgrade.",
       "escalate": false,
       "secondary_department": "billing"
     }
@@ -65,209 +65,209 @@
   {
     "observation": {
       "ticket_id": "MED-2003",
-      "ticket_text": "Your last update broke our bulk import feature. We use this daily. Plus, our dedicated AM is missing. We are evaluating alternatives.",
-      "subject": "Important request",
-      "customer_name": "Corporate User 3",
-      "customer_email": "corp3@enterprise.co",
-      "customer_tier": "enterprise",
-      "channel": "chat",
-      "timestamp": "2026-03-24T11:46:02.454488",
+      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits.",
+      "subject": "Upgrade and API question",
+      "customer_name": "Dev User 3",
+      "customer_email": "dev_3@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-25T11:07:45.992898",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
-      "priority": "P0",
+      "priority": "P2",
       "department": "engineering",
-      "response": "We have received your request. We will escalate this to the appropriate team.",
-      "escalate": true,
-      "secondary_department": "customer_success"
+      "response": "We will have our engineers address your API query, and loop in billing for the upgrade.",
+      "escalate": false,
+      "secondary_department": "billing"
     }
   },
   {
     "observation": {
       "ticket_id": "MED-2004",
-      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits. Who do I speak to?",
-      "subject": "Multiple queries",
-      "customer_name": "Corporate User 4",
-      "customer_email": "corp4@enterprise.co",
-      "customer_tier": "premium",
-      "channel": "chat",
-      "timestamp": "2026-03-25T11:46:02.454491",
+      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation before renewal.",
+      "subject": "SOC2 compliance check",
+      "customer_name": "Procurement 4",
+      "customer_email": "proc_4@corp.com",
+      "customer_tier": "enterprise",
+      "channel": "email",
+      "timestamp": "2026-03-23T18:07:45.992902",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P2",
-      "department": "engineering",
-      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "department": "security",
+      "response": "We can provide SOC2 documentation. Routing to security and legal.",
       "escalate": false,
-      "secondary_department": "billing"
+      "secondary_department": "legal"
     }
   },
   {
     "observation": {
       "ticket_id": "MED-2005",
-      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation.",
-      "subject": "Important request",
-      "customer_name": "Corporate User 5",
-      "customer_email": "corp5@enterprise.co",
-      "customer_tier": "premium",
-      "channel": "chat",
-      "timestamp": "2026-03-24T11:46:02.454493",
+      "ticket_text": "Your last update broke our bulk import feature. We use this daily. We are evaluating alternatives.",
+      "subject": "Important outage request",
+      "customer_name": "Corporate VIP 5",
+      "customer_email": "vip_5@enterprise.co",
+      "customer_tier": "enterprise",
+      "channel": "phone",
+      "timestamp": "2026-03-26T15:07:45.992906",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
-      "priority": "P2",
-      "department": "security",
-      "response": "We have received your request. We will escalate this to the appropriate team.",
-      "escalate": false,
-      "secondary_department": "legal"
+      "priority": "P0",
+      "department": "engineering",
+      "response": "We have escalated this outage to our highest priority engineering queue.",
+      "escalate": true,
+      "secondary_department": "customer_success"
     }
   },
   {
     "observation": {
       "ticket_id": "MED-2006",
-      "ticket_text": "Your last update broke our bulk import feature. We use this daily. Plus, our dedicated AM is missing. We are evaluating alternatives.",
-      "subject": "Multiple queries",
-      "customer_name": "Corporate User 6",
-      "customer_email": "corp6@enterprise.co",
+      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation before renewal.",
+      "subject": "SOC2 compliance check",
+      "customer_name": "Procurement 6",
+      "customer_email": "proc_6@corp.com",
       "customer_tier": "enterprise",
-      "channel": "chat",
-      "timestamp": "2026-03-24T11:46:02.454496",
+      "channel": "email",
+      "timestamp": "2026-03-25T10:07:45.992911",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
-      "priority": "P0",
-      "department": "engineering",
-      "response": "We have received your request. We will escalate this to the appropriate team.",
-      "escalate": true,
-      "secondary_department": "customer_success"
+      "priority": "P2",
+      "department": "security",
+      "response": "We can provide SOC2 documentation. Routing to security and legal.",
+      "escalate": false,
+      "secondary_department": "legal"
     }
   },
   {
     "observation": {
       "ticket_id": "MED-2007",
-      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation.",
-      "subject": "Important request",
-      "customer_name": "Corporate User 7",
-      "customer_email": "corp7@enterprise.co",
+      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits.",
+      "subject": "Upgrade and API question",
+      "customer_name": "Dev User 7",
+      "customer_email": "dev_7@startup.io",
       "customer_tier": "premium",
-      "channel": "chat",
-      "timestamp": "2026-03-26T11:46:02.454499",
+      "channel": "email",
+      "timestamp": "2026-03-24T16:07:45.992915",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P2",
-      "department": "security",
-      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "department": "engineering",
+      "response": "We will have our engineers address your API query, and loop in billing for the upgrade.",
       "escalate": false,
-      "secondary_department": "legal"
+      "secondary_department": "billing"
     }
   },
   {
     "observation": {
       "ticket_id": "MED-2008",
-      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits. Who do I speak to?",
-      "subject": "Multiple queries",
-      "customer_name": "Corporate User 8",
-      "customer_email": "corp8@enterprise.co",
-      "customer_tier": "premium",
-      "channel": "chat",
-      "timestamp": "2026-03-26T11:46:02.454501",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P2",
-      "department": "engineering",
-      "response": "We have received your request. We will escalate this to the appropriate team.",
-      "escalate": false,
-      "secondary_department": "billing"
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "MED-2009",
-      "ticket_text": "Your last update broke our bulk import feature. We use this daily. Plus, our dedicated AM is missing. We are evaluating alternatives.",
-      "subject": "Important request",
-      "customer_name": "Corporate User 9",
-      "customer_email": "corp9@enterprise.co",
+      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation before renewal.",
+      "subject": "SOC2 compliance check",
+      "customer_name": "Procurement 8",
+      "customer_email": "proc_8@corp.com",
       "customer_tier": "enterprise",
-      "channel": "chat",
-      "timestamp": "2026-03-24T11:46:02.454504",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P0",
-      "department": "engineering",
-      "response": "We have received your request. We will escalate this to the appropriate team.",
-      "escalate": true,
-      "secondary_department": "customer_success"
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "MED-2010",
-      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits. Who do I speak to?",
-      "subject": "Multiple queries",
-      "customer_name": "Corporate User 10",
-      "customer_email": "corp10@enterprise.co",
-      "customer_tier": "premium",
-      "channel": "chat",
-      "timestamp": "2026-03-25T11:46:02.454507",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P2",
-      "department": "engineering",
-      "response": "We have received your request. We will escalate this to the appropriate team.",
-      "escalate": false,
-      "secondary_department": "billing"
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "MED-2011",
-      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation.",
-      "subject": "Important request",
-      "customer_name": "Corporate User 11",
-      "customer_email": "corp11@enterprise.co",
-      "customer_tier": "premium",
-      "channel": "chat",
-      "timestamp": "2026-03-26T11:46:02.454510",
+      "channel": "email",
+      "timestamp": "2026-03-24T09:07:45.992919",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P2",
       "department": "security",
-      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "response": "We can provide SOC2 documentation. Routing to security and legal.",
       "escalate": false,
       "secondary_department": "legal"
     }
   },
   {
     "observation": {
-      "ticket_id": "MED-2012",
-      "ticket_text": "Your last update broke our bulk import feature. We use this daily. Plus, our dedicated AM is missing. We are evaluating alternatives.",
-      "subject": "Multiple queries",
-      "customer_name": "Corporate User 12",
-      "customer_email": "corp12@enterprise.co",
+      "ticket_id": "MED-2009",
+      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation before renewal.",
+      "subject": "SOC2 compliance check",
+      "customer_name": "Procurement 9",
+      "customer_email": "proc_9@corp.com",
       "customer_tier": "enterprise",
-      "channel": "chat",
-      "timestamp": "2026-03-24T11:46:02.454512",
+      "channel": "email",
+      "timestamp": "2026-03-24T16:07:45.992922",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "security",
+      "response": "We can provide SOC2 documentation. Routing to security and legal.",
+      "escalate": false,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2010",
+      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation before renewal.",
+      "subject": "SOC2 compliance check",
+      "customer_name": "Procurement 10",
+      "customer_email": "proc_10@corp.com",
+      "customer_tier": "enterprise",
+      "channel": "email",
+      "timestamp": "2026-03-24T16:07:45.992926",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "security",
+      "response": "We can provide SOC2 documentation. Routing to security and legal.",
+      "escalate": false,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2011",
+      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits.",
+      "subject": "Upgrade and API question",
+      "customer_name": "Dev User 11",
+      "customer_email": "dev_11@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-24T12:07:45.992929",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "engineering",
+      "response": "We will have our engineers address your API query, and loop in billing for the upgrade.",
+      "escalate": false,
+      "secondary_department": "billing"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2012",
+      "ticket_text": "Your last update broke our bulk import feature. We use this daily. We are evaluating alternatives.",
+      "subject": "Important outage request",
+      "customer_name": "Corporate VIP 12",
+      "customer_email": "vip_12@enterprise.co",
+      "customer_tier": "enterprise",
+      "channel": "phone",
+      "timestamp": "2026-03-26T09:07:45.992933",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P0",
       "department": "engineering",
-      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "response": "We have escalated this outage to our highest priority engineering queue.",
       "escalate": true,
       "secondary_department": "customer_success"
     }
@@ -275,43 +275,148 @@
   {
     "observation": {
       "ticket_id": "MED-2013",
-      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation.",
-      "subject": "Important request",
-      "customer_name": "Corporate User 13",
-      "customer_email": "corp13@enterprise.co",
+      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits.",
+      "subject": "Upgrade and API question",
+      "customer_name": "Dev User 13",
+      "customer_email": "dev_13@startup.io",
       "customer_tier": "premium",
-      "channel": "chat",
-      "timestamp": "2026-03-26T11:46:02.454517",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P2",
-      "department": "security",
-      "response": "We have received your request. We will escalate this to the appropriate team.",
-      "escalate": false,
-      "secondary_department": "legal"
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "MED-2014",
-      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits. Who do I speak to?",
-      "subject": "Multiple queries",
-      "customer_name": "Corporate User 14",
-      "customer_email": "corp14@enterprise.co",
-      "customer_tier": "premium",
-      "channel": "chat",
-      "timestamp": "2026-03-25T11:46:02.454522",
+      "channel": "email",
+      "timestamp": "2026-03-26T18:07:45.992936",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P2",
       "department": "engineering",
-      "response": "We have received your request. We will escalate this to the appropriate team.",
+      "response": "We will have our engineers address your API query, and loop in billing for the upgrade.",
       "escalate": false,
       "secondary_department": "billing"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2014",
+      "ticket_text": "System unavailable for 2 hours. Need immediate assistance.",
+      "subject": "Important outage request",
+      "customer_name": "Corporate VIP 14",
+      "customer_email": "vip_14@enterprise.co",
+      "customer_tier": "enterprise",
+      "channel": "phone",
+      "timestamp": "2026-03-26T12:07:45.992939",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P0",
+      "department": "engineering",
+      "response": "We have escalated this outage to our highest priority engineering queue.",
+      "escalate": true,
+      "secondary_department": "customer_success"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2015",
+      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits.",
+      "subject": "Upgrade and API question",
+      "customer_name": "Dev User 15",
+      "customer_email": "dev_15@startup.io",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-26T16:07:45.992942",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "engineering",
+      "response": "We will have our engineers address your API query, and loop in billing for the upgrade.",
+      "escalate": false,
+      "secondary_department": "billing"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2016",
+      "ticket_text": "Enterprise integration is down again. We have a strict SLA.",
+      "subject": "Important outage request",
+      "customer_name": "Corporate VIP 16",
+      "customer_email": "vip_16@enterprise.co",
+      "customer_tier": "enterprise",
+      "channel": "phone",
+      "timestamp": "2026-03-27T15:07:45.992946",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P0",
+      "department": "engineering",
+      "response": "We have escalated this outage to our highest priority engineering queue.",
+      "escalate": true,
+      "secondary_department": "customer_success"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2017",
+      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation before renewal.",
+      "subject": "SOC2 compliance check",
+      "customer_name": "Procurement 17",
+      "customer_email": "proc_17@corp.com",
+      "customer_tier": "enterprise",
+      "channel": "email",
+      "timestamp": "2026-03-24T18:07:45.992949",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "security",
+      "response": "We can provide SOC2 documentation. Routing to security and legal.",
+      "escalate": false,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2018",
+      "ticket_text": "Your last update broke our bulk import feature. We use this daily. We are evaluating alternatives.",
+      "subject": "Important outage request",
+      "customer_name": "Corporate VIP 18",
+      "customer_email": "vip_18@enterprise.co",
+      "customer_tier": "enterprise",
+      "channel": "phone",
+      "timestamp": "2026-03-27T10:07:45.992952",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P0",
+      "department": "engineering",
+      "response": "We have escalated this outage to our highest priority engineering queue.",
+      "escalate": true,
+      "secondary_department": "customer_success"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2019",
+      "ticket_text": "System unavailable for 2 hours. Need immediate assistance.",
+      "subject": "Important outage request",
+      "customer_name": "Corporate VIP 19",
+      "customer_email": "vip_19@enterprise.co",
+      "customer_tier": "enterprise",
+      "channel": "phone",
+      "timestamp": "2026-03-26T16:07:45.992956",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P0",
+      "department": "engineering",
+      "response": "We have escalated this outage to our highest priority engineering queue.",
+      "escalate": true,
+      "secondary_department": "customer_success"
     }
   }
 ]

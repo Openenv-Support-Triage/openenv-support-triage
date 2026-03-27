@@ -36,18 +36,30 @@ def calculate_reward(action: Action, ground_truth: dict, unnecessary_steps: int 
     if len(truth_resp_words) == 0:
         response_score = 1.0
     else:
-        intersection = agent_resp_words.intersection(truth_resp_words)
-        overlap_ratio = len(intersection) / len(truth_resp_words)
-        response_score = min(1.0, overlap_ratio * 1.5) # simple boost multiplier
+        intersection_len = len(agent_resp_words.intersection(truth_resp_words))
+        precision = intersection_len / max(1, len(agent_resp_words))
+        recall = intersection_len / max(1, len(truth_resp_words))
+        
+        if precision + recall == 0:
+            response_score = 0.0
+        else:
+            response_score = 2 * (precision * recall) / (precision + recall)
         
     # 4. Escalation Match (0.10)
     escalation_score = 1.0 if action.escalate == ground_truth["escalate"] else 0.0
+    
+    # 5. Critical Penalty Check
+    critical_penalty = 0.0
+    # Legal and security routing misses MUST be penalized immediately if not escalated
+    if ground_truth.get("department") in ["legal", "security"] and not action.escalate:
+        critical_penalty = -1.0
     
     # Calculate final score
     raw_score = (0.40 * priority_score + 
                  0.30 * department_score + 
                  0.20 * response_score + 
-                 0.10 * escalation_score - 
+                 0.10 * escalation_score +
+                 critical_penalty - 
                  0.05 * unnecessary_steps)
                  
     return max(0.0, min(1.0, raw_score))
