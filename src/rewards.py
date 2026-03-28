@@ -43,6 +43,7 @@ def calculate_reward(action: Action, ground_truth: dict, unnecessary_steps: int 
     log.debug(f"  [PRIORITY]  0.40 × {priority_score:.2f} = {weighted_priority:.4f}")
 
     # -- 2. Department Match (weight 0.30) ---------------------------------
+
     department_score = 0.0
     if action.department.value == ground_truth["department"]:
         department_score = 1.0
