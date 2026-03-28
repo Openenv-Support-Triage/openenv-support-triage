@@ -1,14 +1,98 @@
 name: "SupportTriageEnv"
-description: "OpenEnv environment for Customer Support Ticket Triage"
+description: "OpenEnv environment for Customer Support Ticket Triage. Agents must classify priority, route to departments, draft responses, and decide escalation for realistic support tickets."
 version: "0.1.0"
 entrypoint: "src.environment:SupportTriageEnv"
+
 tasks:
   easy:
-    description: "Clear single-intent tickets, obvious keywords"
+    description: "10 clear single-intent tickets with obvious keywords and standard customers"
     expected_score: 0.85
+    num_tickets: 10
   medium:
-    description: "Multi-intent, VIP overrides, ambiguous priority"
+    description: "15 multi-intent tickets with VIP overrides, ambiguous priority, and emotional language"
     expected_score: 0.55
+    num_tickets: 15
   hard:
-    description: "Sarcasm, legal threats, multi-turn, broken English"
+    description: "20 tickets with sarcasm, legal threats, multi-turn threads, broken English, and adversarial inputs"
     expected_score: 0.35
+    num_tickets: 20
+
+observation_space:
+  type: object
+  properties:
+    ticket_id:
+      type: string
+      description: "Unique identifier for the ticket"
+    ticket_text:
+      type: string
+      description: "Full body text of the support ticket"
+    subject:
+      type: string
+      description: "Email subject line or chat title"
+    customer_name:
+      type: string
+      description: "Name of the customer who filed"
+    customer_email:
+      type: string
+      format: email
+      description: "Customer contact email"
+    customer_tier:
+      type: string
+      enum: [standard, premium, enterprise]
+      description: "Customer account tier"
+    channel:
+      type: string
+      enum: [email, chat, phone, social_media]
+      description: "Channel through which the ticket was submitted"
+    timestamp:
+      type: string
+      format: date-time
+      description: "When the ticket was submitted"
+    conversation_history:
+      type: array
+      items:
+        type: string
+      description: "Previous messages in this thread"
+    attachments:
+      type: array
+      items:
+        type: string
+      description: "Filenames of attached documents"
+
+action_space:
+  type: object
+  required: [priority, department, response, escalate]
+  properties:
+    priority:
+      type: string
+      enum: [P0, P1, P2, P3]
+      description: "P0=critical, P1=high, P2=medium, P3=low"
+    department:
+      type: string
+      enum: [billing, engineering, product_support, customer_success, legal, security]
+      description: "Department to route the ticket to"
+    response:
+      type: string
+      description: "Draft reply text (50-500 characters recommended)"
+    escalate:
+      type: boolean
+      description: "True = escalate to manager/specialist, False = handle at L1"
+
+reward:
+  range: [0.0, 1.0]
+  components:
+    priority_match:
+      weight: 0.40
+      description: "1.0 if exact match; 0.5 if off by one level; 0.0 otherwise"
+    department_match:
+      weight: 0.30
+      description: "1.0 if exact match; 0.5 if secondary department correct; 0.0 otherwise"
+    response_quality:
+      weight: 0.20
+      description: "F1-score keyword overlap with reference response (0.0-1.0)"
+    escalation_match:
+      weight: 0.10
+      description: "1.0 if exact match; 0.0 if wrong"
+    speed_penalty:
+      weight: -0.05
+      description: "Deducted per unnecessary clarification request"
