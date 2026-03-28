@@ -1,42 +1,23 @@
 [
   {
     "observation": {
-      "ticket_id": "EASY-1000",
-      "ticket_text": "Forgot password, send link.",
-      "subject": "Password reset",
-      "customer_name": "User 3734",
-      "customer_email": "user3734@example.com",
-      "customer_tier": "standard",
-      "channel": "chat",
-      "timestamp": "2026-03-22T15:07:45.991741",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P2",
-      "department": "product_support",
-      "response": "Thank you for reaching out. We are processing your request regarding password reset.",
-      "escalate": false,
-      "secondary_department": null
-    }
-  },
-  {
-    "observation": {
       "ticket_id": "EASY-1001",
-      "ticket_text": "Tracking number says pending.",
-      "subject": "Order tracking",
-      "customer_name": "User 2057",
-      "customer_email": "user2057@example.com",
+      "ticket_text": "Hi, I placed an order yesterday for a yoga mat (Order #45821, Rs 1,299) but my bank shows two charges of Rs 1,299 each. Can you please refund the duplicate charge? I have attached my bank statement. Thanks, Priya",
+      "subject": "Charged twice for my order #45821",
+      "customer_name": "Priya Sharma",
+      "customer_email": "priya.sharma@gmail.com",
       "customer_tier": "standard",
       "channel": "email",
-      "timestamp": "2026-03-24T14:07:45.991769",
+      "timestamp": "2026-03-27T18:54:19.222883",
       "conversation_history": [],
-      "attachments": []
+      "attachments": [
+        "bank_statement.pdf"
+      ]
     },
     "ground_truth": {
-      "priority": "P3",
-      "department": "customer_success",
-      "response": "Thank you for reaching out. We are processing your request regarding order tracking.",
+      "priority": "P1",
+      "department": "billing",
+      "response": "Hi Priya, thank you for reaching out. We can see the duplicate charge on Order #45821 and have initiated a refund of Rs 1,299. Please allow 3-5 business days for it to reflect in your account.",
       "escalate": false,
       "secondary_department": null
     }
@@ -44,20 +25,20 @@
   {
     "observation": {
       "ticket_id": "EASY-1002",
-      "ticket_text": "Where is my order #1234?",
-      "subject": "Order tracking",
-      "customer_name": "User 2375",
-      "customer_email": "user2375@example.com",
+      "ticket_text": "I've been trying to reset my password for the last hour but the reset link keeps saying 'expired'. I need to access my account urgently for a presentation tomorrow. Please help.",
+      "subject": "Password reset link not working",
+      "customer_name": "Rahul Verma",
+      "customer_email": "rahul.verma@outlook.com",
       "customer_tier": "standard",
-      "channel": "email",
-      "timestamp": "2026-03-24T10:07:45.991778",
+      "channel": "chat",
+      "timestamp": "2026-03-28T19:54:19.222908",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
-      "priority": "P3",
-      "department": "customer_success",
-      "response": "Thank you for reaching out. We are processing your request regarding order tracking.",
+      "priority": "P2",
+      "department": "product_support",
+      "response": "Hi Rahul, sorry about the trouble with the password reset link. We have sent you a fresh reset link to your registered email. Please try again within 15 minutes as the link expires after that.",
       "escalate": false,
       "secondary_department": null
     }
@@ -65,20 +46,20 @@
   {
     "observation": {
       "ticket_id": "EASY-1003",
-      "ticket_text": "How do I export data to CSV?",
-      "subject": "How to use",
-      "customer_name": "User 6900",
-      "customer_email": "user6900@example.com",
+      "ticket_text": "My order #78234 was supposed to arrive 3 days ago but tracking still says 'In Transit'. Can you check what happened? I need it for my daughter's birthday this Saturday.",
+      "subject": "Order #78234 delivery delayed",
+      "customer_name": "Sneha Patel",
+      "customer_email": "sneha.patel@yahoo.com",
       "customer_tier": "standard",
-      "channel": "chat",
-      "timestamp": "2026-03-22T09:07:45.991783",
+      "channel": "email",
+      "timestamp": "2026-03-25T18:54:19.222913",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
-      "priority": "P3",
-      "department": "product_support",
-      "response": "Thank you for reaching out. We are processing your request regarding how to use.",
+      "priority": "P2",
+      "department": "customer_success",
+      "response": "Hi Sneha, sorry for the delay on Order #78234. We are checking with our shipping partner and will update you within 24 hours. If it cannot be delivered by Saturday, we will arrange express reshipping at no extra cost.",
       "escalate": false,
       "secondary_department": null
     }
@@ -86,20 +67,20 @@
   {
     "observation": {
       "ticket_id": "EASY-1004",
-      "ticket_text": "Where is the settings page?",
-      "subject": "How to use",
-      "customer_name": "User 1456",
-      "customer_email": "user1456@example.com",
+      "ticket_text": "Is there a way to export my dashboard data as a CSV file? I've looked through the settings but can't find the option. Using the Pro plan.",
+      "subject": "How to export data to CSV?",
+      "customer_name": "Amit Kumar",
+      "customer_email": "amit.kumar@techcorp.in",
       "customer_tier": "standard",
-      "channel": "email",
-      "timestamp": "2026-03-25T18:07:45.991788",
+      "channel": "chat",
+      "timestamp": "2026-03-26T18:54:19.222916",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P3",
       "department": "product_support",
-      "response": "Thank you for reaching out. We are processing your request regarding how to use.",
+      "response": "Hi Amit, you can export your dashboard data by going to Settings > Data Management > Export. Select CSV as the format and choose your date range. This feature is available on the Pro plan.",
       "escalate": false,
       "secondary_department": null
     }
@@ -107,20 +88,20 @@
   {
     "observation": {
       "ticket_id": "EASY-1005",
-      "ticket_text": "Bug in your system.",
-      "subject": "Product defect",
-      "customer_name": "User 5291",
-      "customer_email": "user5291@example.com",
+      "ticket_text": "I want to cancel my monthly subscription effective immediately. Please confirm cancellation and let me know if there will be any charges. My account ID is ACC-9921.",
+      "subject": "Cancel my subscription",
+      "customer_name": "Meera Joshi",
+      "customer_email": "meera.joshi@gmail.com",
       "customer_tier": "standard",
       "channel": "email",
-      "timestamp": "2026-03-26T14:07:45.991794",
+      "timestamp": "2026-03-27T18:54:19.222922",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
-      "priority": "P1",
-      "department": "engineering",
-      "response": "Thank you for reaching out. We are processing your request regarding product defect.",
+      "priority": "P2",
+      "department": "billing",
+      "response": "Hi Meera, we have processed the cancellation for account ACC-9921. Your subscription will end at the close of the current billing cycle. No further charges will be applied. You will receive a confirmation email shortly.",
       "escalate": false,
       "secondary_department": null
     }
@@ -128,20 +109,23 @@
   {
     "observation": {
       "ticket_id": "EASY-1006",
-      "ticket_text": "Duplicate charge on my account.",
-      "subject": "Duplicate charge",
-      "customer_name": "User 7719",
-      "customer_email": "user7719@example.com",
+      "ticket_text": "I received my order today but the package was badly damaged and the ceramic vase inside is cracked. Order #55123. I want a replacement or full refund. Photos attached.",
+      "subject": "Damaged product received - Order #55123",
+      "customer_name": "Vikram Singh",
+      "customer_email": "vikram.singh@hotmail.com",
       "customer_tier": "standard",
-      "channel": "chat",
-      "timestamp": "2026-03-22T15:07:45.991799",
+      "channel": "email",
+      "timestamp": "2026-03-28T16:54:19.222926",
       "conversation_history": [],
-      "attachments": []
+      "attachments": [
+        "damaged_product_1.jpg",
+        "damaged_product_2.jpg"
+      ]
     },
     "ground_truth": {
       "priority": "P1",
-      "department": "billing",
-      "response": "Thank you for reaching out. We are processing your request regarding duplicate charge.",
+      "department": "customer_success",
+      "response": "Hi Vikram, we are very sorry about the damaged product. We have initiated a free replacement for your ceramic vase under Order #55123. The replacement will be shipped within 24 hours with express delivery.",
       "escalate": false,
       "secondary_department": null
     }
@@ -149,20 +133,20 @@
   {
     "observation": {
       "ticket_id": "EASY-1007",
-      "ticket_text": "The app crashes every time I open the reports tab.",
-      "subject": "Product defect",
-      "customer_name": "User 3308",
-      "customer_email": "user3308@example.com",
+      "ticket_text": "The reports tab in your app crashes every time I try to open it. I'm on version 4.2.1 on Android 14. Already tried reinstalling but same issue. This is blocking my daily work.",
+      "subject": "App crashes on reports tab",
+      "customer_name": "Deepak Nair",
+      "customer_email": "deepak.nair@startup.io",
       "customer_tier": "standard",
       "channel": "chat",
-      "timestamp": "2026-03-24T10:07:45.991803",
+      "timestamp": "2026-03-28T20:54:19.222928",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P1",
       "department": "engineering",
-      "response": "Thank you for reaching out. We are processing your request regarding product defect.",
+      "response": "Hi Deepak, thank you for reporting this. We have identified a known issue with the reports tab on version 4.2.1. Our engineering team is working on a fix. As a workaround, please try accessing reports through the web app while we push the update.",
       "escalate": false,
       "secondary_department": null
     }
@@ -170,20 +154,20 @@
   {
     "observation": {
       "ticket_id": "EASY-1008",
-      "ticket_text": "I placed an order but my bank shows two charges.",
-      "subject": "Duplicate charge",
-      "customer_name": "User 5393",
-      "customer_email": "user5393@example.com",
+      "ticket_text": "Hi, I'm currently on the Basic plan and want to upgrade to the Business plan. Can you tell me the pricing and what additional features I'll get? Also, will my existing data carry over?",
+      "subject": "Upgrade from Basic to Business plan",
+      "customer_name": "Ananya Reddy",
+      "customer_email": "ananya.reddy@company.co",
       "customer_tier": "standard",
       "channel": "email",
-      "timestamp": "2026-03-23T12:07:45.991807",
+      "timestamp": "2026-03-26T18:54:19.222930",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
-      "priority": "P1",
+      "priority": "P3",
       "department": "billing",
-      "response": "Thank you for reaching out. We are processing your request regarding duplicate charge.",
+      "response": "Hi Ananya, the Business plan is Rs 2,499/month and includes advanced analytics, priority support, and team collaboration. All your existing data will carry over seamlessly. You can upgrade directly from Settings > Subscription.",
       "escalate": false,
       "secondary_department": null
     }
@@ -191,20 +175,20 @@
   {
     "observation": {
       "ticket_id": "EASY-1009",
-      "ticket_text": "I want to cancel.",
-      "subject": "Cancellation request",
-      "customer_name": "User 1865",
-      "customer_email": "user1865@example.com",
+      "ticket_text": "I requested a refund 10 days ago for Order #33901 (Rs 3,450) but it still hasn't shown up in my bank account. Reference number REF-88712. Can you check the status?",
+      "subject": "Refund not received for Order #33901",
+      "customer_name": "Kavita Menon",
+      "customer_email": "kavita.menon@gmail.com",
       "customer_tier": "standard",
-      "channel": "chat",
-      "timestamp": "2026-03-26T17:07:45.991813",
+      "channel": "email",
+      "timestamp": "2026-03-27T18:54:19.222932",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P2",
       "department": "billing",
-      "response": "Thank you for reaching out. We are processing your request regarding cancellation request.",
+      "response": "Hi Kavita, we have checked refund reference REF-88712 for Order #33901. The refund of Rs 3,450 was processed on our end and should reflect within 2-3 business days. If you do not see it by then, please share your bank statement and we will escalate with our payment partner.",
       "escalate": false,
       "secondary_department": null
     }
@@ -212,209 +196,20 @@
   {
     "observation": {
       "ticket_id": "EASY-1010",
-      "ticket_text": "I want to cancel.",
-      "subject": "Cancellation request",
-      "customer_name": "User 1058",
-      "customer_email": "user1058@example.com",
+      "ticket_text": "Just wanted to say that the new UI update is fantastic! The dark mode especially is very well done. Great work by your team. One small suggestion - it would be nice to have a keyboard shortcut for switching themes.",
+      "subject": "Feedback on new UI update",
+      "customer_name": "Rohan Gupta",
+      "customer_email": "rohan.gupta@devmail.com",
       "customer_tier": "standard",
       "channel": "chat",
-      "timestamp": "2026-03-25T12:07:45.991817",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P2",
-      "department": "billing",
-      "response": "Thank you for reaching out. We are processing your request regarding cancellation request.",
-      "escalate": false,
-      "secondary_department": null
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "EASY-1011",
-      "ticket_text": "Please cancel my subscription before the next cycle.",
-      "subject": "Cancellation request",
-      "customer_name": "User 5833",
-      "customer_email": "user5833@example.com",
-      "customer_tier": "standard",
-      "channel": "email",
-      "timestamp": "2026-03-24T16:07:45.991821",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P2",
-      "department": "billing",
-      "response": "Thank you for reaching out. We are processing your request regarding cancellation request.",
-      "escalate": false,
-      "secondary_department": null
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "EASY-1012",
-      "ticket_text": "Still waiting on money back.",
-      "subject": "Refund status",
-      "customer_name": "User 6545",
-      "customer_email": "user6545@example.com",
-      "customer_tier": "standard",
-      "channel": "email",
-      "timestamp": "2026-03-23T10:07:45.991825",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P2",
-      "department": "billing",
-      "response": "Thank you for reaching out. We are processing your request regarding refund status.",
-      "escalate": false,
-      "secondary_department": null
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "EASY-1013",
-      "ticket_text": "Duplicate charge on my account.",
-      "subject": "Duplicate charge",
-      "customer_name": "User 3532",
-      "customer_email": "user3532@example.com",
-      "customer_tier": "standard",
-      "channel": "chat",
-      "timestamp": "2026-03-26T15:07:45.991830",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P1",
-      "department": "billing",
-      "response": "Thank you for reaching out. We are processing your request regarding duplicate charge.",
-      "escalate": false,
-      "secondary_department": null
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "EASY-1014",
-      "ticket_text": "Error 500 when saving data.",
-      "subject": "Product defect",
-      "customer_name": "User 3573",
-      "customer_email": "user3573@example.com",
-      "customer_tier": "standard",
-      "channel": "chat",
-      "timestamp": "2026-03-25T15:07:45.991834",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P1",
-      "department": "engineering",
-      "response": "Thank you for reaching out. We are processing your request regarding product defect.",
-      "escalate": false,
-      "secondary_department": null
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "EASY-1015",
-      "ticket_text": "Bug in your system.",
-      "subject": "Product defect",
-      "customer_name": "User 4628",
-      "customer_email": "user4628@example.com",
-      "customer_tier": "standard",
-      "channel": "chat",
-      "timestamp": "2026-03-23T16:07:45.991838",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P1",
-      "department": "engineering",
-      "response": "Thank you for reaching out. We are processing your request regarding product defect.",
-      "escalate": false,
-      "secondary_department": null
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "EASY-1016",
-      "ticket_text": "When will my package arrive?",
-      "subject": "Order tracking",
-      "customer_name": "User 3754",
-      "customer_email": "user3754@example.com",
-      "customer_tier": "standard",
-      "channel": "email",
-      "timestamp": "2026-03-22T10:07:45.991843",
+      "timestamp": "2026-03-24T18:54:19.222934",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P3",
-      "department": "customer_success",
-      "response": "Thank you for reaching out. We are processing your request regarding order tracking.",
-      "escalate": false,
-      "secondary_department": null
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "EASY-1017",
-      "ticket_text": "Do not renew my plan.",
-      "subject": "Cancellation request",
-      "customer_name": "User 8660",
-      "customer_email": "user8660@example.com",
-      "customer_tier": "standard",
-      "channel": "email",
-      "timestamp": "2026-03-23T18:07:45.991850",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P2",
-      "department": "billing",
-      "response": "Thank you for reaching out. We are processing your request regarding cancellation request.",
-      "escalate": false,
-      "secondary_department": null
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "EASY-1018",
-      "ticket_text": "Reset password please.",
-      "subject": "Password reset",
-      "customer_name": "User 5189",
-      "customer_email": "user5189@example.com",
-      "customer_tier": "standard",
-      "channel": "chat",
-      "timestamp": "2026-03-23T09:07:45.991854",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P2",
       "department": "product_support",
-      "response": "Thank you for reaching out. We are processing your request regarding password reset.",
-      "escalate": false,
-      "secondary_department": null
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "EASY-1019",
-      "ticket_text": "When will my package arrive?",
-      "subject": "Order tracking",
-      "customer_name": "User 1166",
-      "customer_email": "user1166@example.com",
-      "customer_tier": "standard",
-      "channel": "email",
-      "timestamp": "2026-03-23T15:07:45.991858",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P3",
-      "department": "customer_success",
-      "response": "Thank you for reaching out. We are processing your request regarding order tracking.",
+      "response": "Hi Rohan, thank you for the kind feedback! We are glad you like the new UI and dark mode. We have noted your suggestion about the keyboard shortcut for theme switching and will pass it to our product team.",
       "escalate": false,
       "secondary_department": null
     }

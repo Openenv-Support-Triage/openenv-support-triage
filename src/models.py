@@ -54,4 +54,5 @@ class Reward(BaseModel):
 class State(BaseModel):
     status: str
     tickets_processed: int
+    total_tickets: int
     cumulative_score: float

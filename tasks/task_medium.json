@@ -1,42 +1,21 @@
 [
   {
     "observation": {
-      "ticket_id": "MED-2000",
-      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation before renewal.",
-      "subject": "SOC2 compliance check",
-      "customer_name": "Procurement 0",
-      "customer_email": "proc_0@corp.com",
+      "ticket_id": "MED-2001",
+      "ticket_text": "Your latest update broke our bulk import feature — we use this for daily operations and it has been down since Monday. Also, the export format changed without notice and our downstream systems are failing. On top of this, we were promised a dedicated account manager 3 months ago and still don't have one. We are evaluating alternatives. — Arjun, Head of Ops",
+      "subject": "Multiple issues with recent update",
+      "customer_name": "Arjun Mehta",
+      "customer_email": "arjun.mehta@enterprise.co",
       "customer_tier": "enterprise",
       "channel": "email",
-      "timestamp": "2026-03-23T11:07:45.992872",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P2",
-      "department": "security",
-      "response": "We can provide SOC2 documentation. Routing to security and legal.",
-      "escalate": false,
-      "secondary_department": "legal"
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "MED-2001",
-      "ticket_text": "Enterprise integration is down again. We have a strict SLA.",
-      "subject": "Important outage request",
-      "customer_name": "Corporate VIP 1",
-      "customer_email": "vip_1@enterprise.co",
-      "customer_tier": "enterprise",
-      "channel": "phone",
-      "timestamp": "2026-03-26T12:07:45.992887",
+      "timestamp": "2026-03-28T20:54:19.222937",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P0",
       "department": "engineering",
-      "response": "We have escalated this outage to our highest priority engineering queue.",
+      "response": "Dear Arjun, we sincerely apologize for the disruption. We are treating this as our highest priority. Our engineering team is investigating the bulk import issue and export format change immediately. We are also escalating the account manager assignment to our Customer Success VP.",
       "escalate": true,
       "secondary_department": "customer_success"
     }
@@ -44,41 +23,41 @@
   {
     "observation": {
       "ticket_id": "MED-2002",
-      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits.",
-      "subject": "Upgrade and API question",
-      "customer_name": "Dev User 2",
-      "customer_email": "dev_2@startup.io",
+      "ticket_text": "I've been a loyal customer for 5 years and this is the THIRD time this month my scheduled reports have failed to generate. I pay Rs 8,000/month for the premium plan and expect better. My team relies on these reports for client meetings.",
+      "subject": "Scheduled reports failing repeatedly",
+      "customer_name": "Nisha Kapoor",
+      "customer_email": "nisha.kapoor@consulting.in",
       "customer_tier": "premium",
       "channel": "email",
-      "timestamp": "2026-03-25T18:07:45.992894",
+      "timestamp": "2026-03-28T18:54:19.222939",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
-      "priority": "P2",
+      "priority": "P1",
       "department": "engineering",
-      "response": "We will have our engineers address your API query, and loop in billing for the upgrade.",
-      "escalate": false,
-      "secondary_department": "billing"
+      "response": "Hi Nisha, we understand how critical these reports are for your team. We are escalating this to our engineering team immediately. As a workaround, you can manually trigger reports from the dashboard. We will provide a root cause analysis within 24 hours.",
+      "escalate": true,
+      "secondary_department": "customer_success"
     }
   },
   {
     "observation": {
       "ticket_id": "MED-2003",
-      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits.",
-      "subject": "Upgrade and API question",
-      "customer_name": "Dev User 3",
-      "customer_email": "dev_3@startup.io",
+      "ticket_text": "I want to upgrade my plan to Enterprise, but I also need to understand your API rate limits for our use case. We process around 50,000 API calls daily and need guaranteed uptime. Can someone from sales and engineering get on a call?",
+      "subject": "Upgrade inquiry + API rate limits",
+      "customer_name": "Karan Deshmukh",
+      "customer_email": "karan.deshmukh@fintech.co",
       "customer_tier": "premium",
       "channel": "email",
-      "timestamp": "2026-03-25T11:07:45.992898",
+      "timestamp": "2026-03-27T18:54:19.222941",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P2",
       "department": "engineering",
-      "response": "We will have our engineers address your API query, and loop in billing for the upgrade.",
+      "response": "Hi Karan, thank you for your interest in the Enterprise plan. For 50,000 daily API calls, you will need our Enterprise tier which includes dedicated rate limits and SLA guarantees. We will arrange a joint call with our sales and engineering teams.",
       "escalate": false,
       "secondary_department": "billing"
     }
@@ -86,188 +65,197 @@
   {
     "observation": {
       "ticket_id": "MED-2004",
-      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation before renewal.",
-      "subject": "SOC2 compliance check",
-      "customer_name": "Procurement 4",
-      "customer_email": "proc_4@corp.com",
-      "customer_tier": "enterprise",
-      "channel": "email",
-      "timestamp": "2026-03-23T18:07:45.992902",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P2",
-      "department": "security",
-      "response": "We can provide SOC2 documentation. Routing to security and legal.",
-      "escalate": false,
-      "secondary_department": "legal"
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "MED-2005",
-      "ticket_text": "Your last update broke our bulk import feature. We use this daily. We are evaluating alternatives.",
-      "subject": "Important outage request",
-      "customer_name": "Corporate VIP 5",
-      "customer_email": "vip_5@enterprise.co",
+      "ticket_text": "Our SSO integration stopped working after your maintenance window last night. None of our 200+ employees can log in. This is a COMPLETE BLOCKER for our company. We need this fixed RIGHT NOW.",
+      "subject": "SSO broken - 200+ users locked out",
+      "customer_name": "Ravi Krishnan",
+      "customer_email": "ravi.krishnan@megacorp.com",
       "customer_tier": "enterprise",
       "channel": "phone",
-      "timestamp": "2026-03-26T15:07:45.992906",
+      "timestamp": "2026-03-28T21:54:19.222943",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P0",
       "department": "engineering",
-      "response": "We have escalated this outage to our highest priority engineering queue.",
+      "response": "Ravi, this is our top priority. We have engaged our infrastructure team to investigate the SSO disruption from last night's maintenance. We will provide temporary bypass credentials for critical users within 30 minutes while we work on a permanent fix.",
+      "escalate": true,
+      "secondary_department": "security"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2005",
+      "ticket_text": "Is your system SOC2 compliant? Our procurement team requires full compliance documentation before we can renew our enterprise contract. The renewal deadline is in 2 weeks. Also need GDPR details for our EU operations.",
+      "subject": "SOC2 and GDPR compliance documentation",
+      "customer_name": "Pooja Iyer",
+      "customer_email": "pooja.iyer@globalcorp.com",
+      "customer_tier": "enterprise",
+      "channel": "email",
+      "timestamp": "2026-03-26T18:54:19.222945",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "security",
+      "response": "Hi Pooja, yes we are SOC2 Type II certified and GDPR compliant. We will send our compliance documentation package including audit reports and DPA within 48 hours. We are routing this to our security and legal teams to ensure you have everything needed for renewal.",
+      "escalate": false,
+      "secondary_department": "legal"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2006",
+      "ticket_text": "I am extremely frustrated. I was charged Rs 15,000 for annual plan but I only signed up for monthly at Rs 1,500. This is unauthorized! I want an immediate refund AND explanation of how this happened. If not resolved today, I'm filing a complaint with the consumer forum.",
+      "subject": "Unauthorized annual charge - need immediate refund",
+      "customer_name": "Aditya Bhatt",
+      "customer_email": "aditya.bhatt@mail.com",
+      "customer_tier": "standard",
+      "channel": "email",
+      "timestamp": "2026-03-28T19:54:19.222948",
+      "conversation_history": [],
+      "attachments": [
+        "payment_screenshot.png"
+      ]
+    },
+    "ground_truth": {
+      "priority": "P1",
+      "department": "billing",
+      "response": "Hi Aditya, we sincerely apologize for the billing error. We have flagged this for immediate investigation. Our billing team will process a full refund of the difference within 24 hours and ensure your account reflects the correct monthly plan.",
       "escalate": true,
       "secondary_department": "customer_success"
     }
   },
   {
     "observation": {
-      "ticket_id": "MED-2006",
-      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation before renewal.",
-      "subject": "SOC2 compliance check",
-      "customer_name": "Procurement 6",
-      "customer_email": "proc_6@corp.com",
-      "customer_tier": "enterprise",
-      "channel": "email",
-      "timestamp": "2026-03-25T10:07:45.992911",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P2",
-      "department": "security",
-      "response": "We can provide SOC2 documentation. Routing to security and legal.",
-      "escalate": false,
-      "secondary_department": "legal"
-    }
-  },
-  {
-    "observation": {
       "ticket_id": "MED-2007",
-      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits.",
-      "subject": "Upgrade and API question",
-      "customer_name": "Dev User 7",
-      "customer_email": "dev_7@startup.io",
+      "ticket_text": "Hi team, we're migrating our data warehouse from Redshift to BigQuery and need to understand how your connector handles schema changes. Also, our current integration is throwing intermittent 504 errors during peak hours (9-11 AM IST). Two separate issues but both blocking our migration timeline.",
+      "subject": "BigQuery migration support + 504 errors",
+      "customer_name": "Sanjay Mohan",
+      "customer_email": "sanjay.mohan@datatech.io",
       "customer_tier": "premium",
       "channel": "email",
-      "timestamp": "2026-03-24T16:07:45.992915",
+      "timestamp": "2026-03-27T18:54:19.222950",
       "conversation_history": [],
-      "attachments": []
+      "attachments": [
+        "error_logs.txt"
+      ]
     },
     "ground_truth": {
-      "priority": "P2",
+      "priority": "P1",
       "department": "engineering",
-      "response": "We will have our engineers address your API query, and loop in billing for the upgrade.",
+      "response": "Hi Sanjay, thank you for the detailed report. We will assign a migration specialist to help with the BigQuery connector setup. For the 504 errors, our infrastructure team will analyze the logs you shared and investigate the peak-hour timeouts separately.",
       "escalate": false,
-      "secondary_department": "billing"
+      "secondary_department": "product_support"
     }
   },
   {
     "observation": {
       "ticket_id": "MED-2008",
-      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation before renewal.",
-      "subject": "SOC2 compliance check",
-      "customer_name": "Procurement 8",
-      "customer_email": "proc_8@corp.com",
+      "ticket_text": "We signed a 3-year contract last quarter with guaranteed 99.9% uptime. Your status page shows 3 outages this month totaling 4 hours. That puts you below the SLA threshold. Please provide the incident reports and details on SLA credit process.",
+      "subject": "SLA breach - requesting credit",
+      "customer_name": "Divya Raghavan",
+      "customer_email": "divya.raghavan@insurance.co",
       "customer_tier": "enterprise",
       "channel": "email",
-      "timestamp": "2026-03-24T09:07:45.992919",
+      "timestamp": "2026-03-27T18:54:19.222952",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
-      "priority": "P2",
-      "department": "security",
-      "response": "We can provide SOC2 documentation. Routing to security and legal.",
-      "escalate": false,
-      "secondary_department": "legal"
+      "priority": "P1",
+      "department": "customer_success",
+      "response": "Dear Divya, you are correct that the recent outages have impacted our SLA commitment. We are preparing detailed incident reports for all three events. Our customer success team will initiate the SLA credit process per your contract terms and schedule a call to discuss preventive measures.",
+      "escalate": true,
+      "secondary_department": "engineering"
     }
   },
   {
     "observation": {
       "ticket_id": "MED-2009",
-      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation before renewal.",
-      "subject": "SOC2 compliance check",
-      "customer_name": "Procurement 9",
-      "customer_email": "proc_9@corp.com",
-      "customer_tier": "enterprise",
+      "ticket_text": "Your platform is showing different numbers in the analytics dashboard vs the exported report. Dashboard says 12,450 users but the CSV export shows 11,890. This discrepancy is causing trust issues with our investors. We present these numbers in board meetings.",
+      "subject": "Data discrepancy between dashboard and export",
+      "customer_name": "Nikhil Saxena",
+      "customer_email": "nikhil.saxena@growth.vc",
+      "customer_tier": "premium",
       "channel": "email",
-      "timestamp": "2026-03-24T16:07:45.992922",
+      "timestamp": "2026-03-26T18:54:19.222953",
       "conversation_history": [],
-      "attachments": []
+      "attachments": [
+        "dashboard_screenshot.png",
+        "export_csv_sample.csv"
+      ]
     },
     "ground_truth": {
-      "priority": "P2",
-      "department": "security",
-      "response": "We can provide SOC2 documentation. Routing to security and legal.",
+      "priority": "P1",
+      "department": "engineering",
+      "response": "Hi Nikhil, data accuracy is critical and we take this discrepancy seriously. Our engineering team will investigate the difference between dashboard and export figures. We will provide a root cause analysis within 48 hours and ensure both sources are consistent.",
       "escalate": false,
-      "secondary_department": "legal"
+      "secondary_department": "product_support"
     }
   },
   {
     "observation": {
       "ticket_id": "MED-2010",
-      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation before renewal.",
-      "subject": "SOC2 compliance check",
-      "customer_name": "Procurement 10",
-      "customer_email": "proc_10@corp.com",
+      "ticket_text": "I'm the new IT admin for our company and I need to transfer the account ownership from my predecessor (raj.old@company.com) to me. I also need to reset all API keys as a security precaution since he left under difficult circumstances.",
+      "subject": "Account ownership transfer + API key reset",
+      "customer_name": "Prateek Malhotra",
+      "customer_email": "prateek.malhotra@company.com",
       "customer_tier": "enterprise",
       "channel": "email",
-      "timestamp": "2026-03-24T16:07:45.992926",
+      "timestamp": "2026-03-28T17:54:19.222956",
       "conversation_history": [],
-      "attachments": []
+      "attachments": [
+        "authorization_letter.pdf"
+      ]
     },
     "ground_truth": {
-      "priority": "P2",
+      "priority": "P1",
       "department": "security",
-      "response": "We can provide SOC2 documentation. Routing to security and legal.",
-      "escalate": false,
-      "secondary_department": "legal"
+      "response": "Hi Prateek, for account ownership transfer and API key rotation, we need to verify your authorization. We have received your authorization letter. Our security team will process the transfer and reset all API keys within 4 hours for safety.",
+      "escalate": true,
+      "secondary_department": "customer_success"
     }
   },
   {
     "observation": {
       "ticket_id": "MED-2011",
-      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits.",
-      "subject": "Upgrade and API question",
-      "customer_name": "Dev User 11",
-      "customer_email": "dev_11@startup.io",
-      "customer_tier": "premium",
-      "channel": "email",
-      "timestamp": "2026-03-24T12:07:45.992929",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P2",
-      "department": "engineering",
-      "response": "We will have our engineers address your API query, and loop in billing for the upgrade.",
-      "escalate": false,
-      "secondary_department": "billing"
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "MED-2012",
-      "ticket_text": "Your last update broke our bulk import feature. We use this daily. We are evaluating alternatives.",
-      "subject": "Important outage request",
-      "customer_name": "Corporate VIP 12",
-      "customer_email": "vip_12@enterprise.co",
+      "ticket_text": "We noticed unusual login activity on our enterprise account — someone accessed it from an IP in a country where we have no employees (Nigeria, 3 AM local time). We have 2FA enabled. Please investigate immediately.",
+      "subject": "Suspicious login activity on enterprise account",
+      "customer_name": "Shreya Bose",
+      "customer_email": "shreya.bose@pharma.co",
       "customer_tier": "enterprise",
       "channel": "phone",
-      "timestamp": "2026-03-26T09:07:45.992933",
+      "timestamp": "2026-03-28T20:54:19.222958",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P0",
-      "department": "engineering",
-      "response": "We have escalated this outage to our highest priority engineering queue.",
+      "department": "security",
+      "response": "Shreya, we are treating this as a critical security incident. We have temporarily locked the compromised session and initiated a full audit of recent account activity. Our security team will contact you within 30 minutes with findings and recommended actions.",
+      "escalate": true,
+      "secondary_department": "engineering"
+    }
+  },
+  {
+    "observation": {
+      "ticket_id": "MED-2012",
+      "ticket_text": "I love your product but the mobile app is really lacking compared to the web version. No offline mode, can't create custom reports, and the notification system is unreliable. We're a field team and 60% of our usage is mobile. Considering switching to CompetitorX which has better mobile support.",
+      "subject": "Mobile app feature gaps - considering alternatives",
+      "customer_name": "Gaurav Thakur",
+      "customer_email": "gaurav.thakur@fieldops.com",
+      "customer_tier": "premium",
+      "channel": "email",
+      "timestamp": "2026-03-25T18:54:19.222961",
+      "conversation_history": [],
+      "attachments": []
+    },
+    "ground_truth": {
+      "priority": "P2",
+      "department": "product_support",
+      "response": "Hi Gaurav, thank you for the detailed feedback on our mobile app. We understand the importance of mobile for field teams. Offline mode and custom mobile reports are on our Q2 roadmap. We would love to schedule a call to understand your specific needs and share our mobile development timeline.",
       "escalate": true,
       "secondary_department": "customer_success"
     }
@@ -275,41 +263,41 @@
   {
     "observation": {
       "ticket_id": "MED-2013",
-      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits.",
-      "subject": "Upgrade and API question",
-      "customer_name": "Dev User 13",
-      "customer_email": "dev_13@startup.io",
-      "customer_tier": "premium",
+      "ticket_text": "We need to add 50 new user seats to our enterprise plan before the end of this week. Also, 10 of these users need admin privileges. Can you send us an updated invoice reflecting the new seats? Our finance team needs it for budget approval.",
+      "subject": "Add 50 seats + updated invoice needed",
+      "customer_name": "Tanvi Shah",
+      "customer_email": "tanvi.shah@logistics.co",
+      "customer_tier": "enterprise",
       "channel": "email",
-      "timestamp": "2026-03-26T18:07:45.992936",
+      "timestamp": "2026-03-27T18:54:19.222964",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P2",
-      "department": "engineering",
-      "response": "We will have our engineers address your API query, and loop in billing for the upgrade.",
+      "department": "billing",
+      "response": "Hi Tanvi, we can add the 50 new seats to your enterprise plan. We will generate a prorated invoice for the additional seats and send it within 24 hours. For the 10 admin users, our team will configure the permissions once you confirm the user list.",
       "escalate": false,
-      "secondary_department": "billing"
+      "secondary_department": "customer_success"
     }
   },
   {
     "observation": {
       "ticket_id": "MED-2014",
-      "ticket_text": "System unavailable for 2 hours. Need immediate assistance.",
-      "subject": "Important outage request",
-      "customer_name": "Corporate VIP 14",
-      "customer_email": "vip_14@enterprise.co",
+      "ticket_text": "Your webhook delivery has been failing for the past 6 hours. We use webhooks to sync order data to our ERP system. This means 6 hours of orders are now out of sync. We need the failed webhooks replayed AND a guarantee this won't happen again.",
+      "subject": "Webhook failures causing data sync issues",
+      "customer_name": "Rajesh Pillai",
+      "customer_email": "rajesh.pillai@ecommerce.in",
       "customer_tier": "enterprise",
       "channel": "phone",
-      "timestamp": "2026-03-26T12:07:45.992939",
+      "timestamp": "2026-03-28T20:54:19.222966",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P0",
       "department": "engineering",
-      "response": "We have escalated this outage to our highest priority engineering queue.",
+      "response": "Rajesh, we have identified the webhook delivery failures and our engineering team is actively working on restoring service. We will replay all failed webhooks from the past 6 hours once the system is stable. A detailed post-mortem will follow within 48 hours.",
       "escalate": true,
       "secondary_department": "customer_success"
     }
@@ -317,106 +305,22 @@
   {
     "observation": {
       "ticket_id": "MED-2015",
-      "ticket_text": "I want to upgrade my plan, but I also have a technical question about the API rate limits.",
-      "subject": "Upgrade and API question",
-      "customer_name": "Dev User 15",
-      "customer_email": "dev_15@startup.io",
-      "customer_tier": "premium",
-      "channel": "email",
-      "timestamp": "2026-03-26T16:07:45.992942",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P2",
-      "department": "engineering",
-      "response": "We will have our engineers address your API query, and loop in billing for the upgrade.",
-      "escalate": false,
-      "secondary_department": "billing"
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "MED-2016",
-      "ticket_text": "Enterprise integration is down again. We have a strict SLA.",
-      "subject": "Important outage request",
-      "customer_name": "Corporate VIP 16",
-      "customer_email": "vip_16@enterprise.co",
-      "customer_tier": "enterprise",
-      "channel": "phone",
-      "timestamp": "2026-03-27T15:07:45.992946",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P0",
-      "department": "engineering",
-      "response": "We have escalated this outage to our highest priority engineering queue.",
-      "escalate": true,
-      "secondary_department": "customer_success"
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "MED-2017",
-      "ticket_text": "Is your system SOC2 compliant? Our procurement requires documentation before renewal.",
-      "subject": "SOC2 compliance check",
-      "customer_name": "Procurement 17",
-      "customer_email": "proc_17@corp.com",
+      "ticket_text": "We are a healthcare company and need to ensure your platform is HIPAA compliant before we can store patient-related metadata. Can you provide your BAA template and details on data encryption at rest and in transit?",
+      "subject": "HIPAA compliance inquiry + BAA request",
+      "customer_name": "Dr. Sunita Rao",
+      "customer_email": "sunita.rao@healthtech.org",
       "customer_tier": "enterprise",
       "channel": "email",
-      "timestamp": "2026-03-24T18:07:45.992949",
+      "timestamp": "2026-03-26T18:54:19.222968",
       "conversation_history": [],
       "attachments": []
     },
     "ground_truth": {
       "priority": "P2",
       "department": "security",
-      "response": "We can provide SOC2 documentation. Routing to security and legal.",
+      "response": "Dear Dr. Rao, we support HIPAA compliance for healthcare customers. Our platform uses AES-256 encryption at rest and TLS 1.3 in transit. We will send our BAA template and compliance documentation to you within 48 hours. Our security team will be happy to answer specific questions.",
       "escalate": false,
       "secondary_department": "legal"
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "MED-2018",
-      "ticket_text": "Your last update broke our bulk import feature. We use this daily. We are evaluating alternatives.",
-      "subject": "Important outage request",
-      "customer_name": "Corporate VIP 18",
-      "customer_email": "vip_18@enterprise.co",
-      "customer_tier": "enterprise",
-      "channel": "phone",
-      "timestamp": "2026-03-27T10:07:45.992952",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P0",
-      "department": "engineering",
-      "response": "We have escalated this outage to our highest priority engineering queue.",
-      "escalate": true,
-      "secondary_department": "customer_success"
-    }
-  },
-  {
-    "observation": {
-      "ticket_id": "MED-2019",
-      "ticket_text": "System unavailable for 2 hours. Need immediate assistance.",
-      "subject": "Important outage request",
-      "customer_name": "Corporate VIP 19",
-      "customer_email": "vip_19@enterprise.co",
-      "customer_tier": "enterprise",
-      "channel": "phone",
-      "timestamp": "2026-03-26T16:07:45.992956",
-      "conversation_history": [],
-      "attachments": []
-    },
-    "ground_truth": {
-      "priority": "P0",
-      "department": "engineering",
-      "response": "We have escalated this outage to our highest priority engineering queue.",
-      "escalate": true,
-      "secondary_department": "customer_success"
     }
   }
 ]
