@@ -20,8 +20,7 @@ def calculate_reward(action: Action, ground_truth: dict, unnecessary_steps: int 
         idx_truth = priorities.index(Priority(ground_truth["priority"]))
         if abs(idx_action - idx_truth) == 1:
             priority_score = 0.5
-            
-    # 2. Department Match (0.30)
+
     department_score = 0.0
     if action.department.value == ground_truth["department"]:
         department_score = 1.0
