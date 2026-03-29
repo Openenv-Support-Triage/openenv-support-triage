@@ -16,6 +16,11 @@ app = FastAPI(
 env = SupportTriageEnv()
 
 
+@app.get("/")
+def root():
+    return {"name": "OpenEnv Support Triage", "docs": "/docs", "health": "/health"}
+
+
 class ResetRequest(BaseModel):
     task_id: str
 
