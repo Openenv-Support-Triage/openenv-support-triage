@@ -1,3 +1,14 @@
+---
+title: OpenEnv Support Triage
+emoji: 🎫
+colorFrom: blue
+colorTo: green
+sdk: docker
+pinned: false
+tags:
+  - openenv
+---
+
 # OpenEnv: Customer Support Ticket Triage
 
 An **OpenEnv**-compliant environment that simulates a customer support ticket queue. AI agents must classify priority, route to the correct department, draft an empathetic response, and decide whether to escalate — scored against human-verified ground truth.
