@@ -28,7 +28,7 @@ def root():
 
 
 class ResetRequest(BaseModel):
-    task_id: str
+    task_id: str = "easy"
 
 
 class StepResponse(BaseModel):
@@ -39,9 +39,10 @@ class StepResponse(BaseModel):
 
 
 @app.post("/reset")
-async def reset(request: ResetRequest):
+async def reset(request: ResetRequest | None = None):
+    task_id = request.task_id if request else "easy"
     try:
-        obs = env.reset(request.task_id)
+        obs = env.reset(task_id)
         return obs.model_dump()
     except (FileNotFoundError, ValueError) as e:
         raise HTTPException(status_code=400, detail=str(e))
