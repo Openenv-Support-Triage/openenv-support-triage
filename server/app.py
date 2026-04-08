@@ -28,7 +28,7 @@ def root():
 
 
 class ResetRequest(BaseModel):
-    task_id: str
+    task_id: str = "easy"
 
 
 class StepResponse(BaseModel):
