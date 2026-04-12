@@ -13,7 +13,7 @@ tags:
 
 An **OpenEnv**-compliant environment that simulates a customer support ticket queue. AI agents must classify priority, route to the correct department, draft an empathetic response, and decide whether to escalate — scored against human-verified ground truth.
 
-> **Hackathon submission by Ashish** | Stack: Python + FastAPI + OpenAI API | Deployment: Hugging Face Spaces
+>  Stack: Python + FastAPI + OpenAI API | Deployment: Hugging Face Spaces
 
 ---
 
